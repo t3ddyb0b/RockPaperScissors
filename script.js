@@ -44,6 +44,7 @@ function playRound(computerSelection, playerSelection){
  	if(playerSelection.toLowerCase() == "rock" || playerSelection.toLowerCase() == "r"){
  		if(computerSelection == "paper"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[0]}!`)
  			displayComputerChoice(computerSelection);
  			console.log('Computer wins the round!')
  			roundCounter++;
@@ -51,6 +52,7 @@ function playRound(computerSelection, playerSelection){
  		}
  		else if(computerSelection == "scissors"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[0]}!`)
  			displayComputerChoice(computerSelection);
  			console.log('You Win the Round!');
  			roundCounter++;
@@ -58,6 +60,7 @@ function playRound(computerSelection, playerSelection){
  		}
  		else if(computerSelection == "rock"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[0]}!`)
  			displayComputerChoice(computerSelection);
  			console.log('Tie!')
  			roundCounter++;
@@ -68,6 +71,7 @@ function playRound(computerSelection, playerSelection){
  	else if(playerSelection.toLowerCase() == "paper" || playerSelection.toLowerCase() == "p"){
  		if(computerSelection == "paper"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[1]}!`)
  			displayComputerChoice(computerSelection);
  			console.log('Tie!');
  			roundCounter++;
@@ -75,6 +79,7 @@ function playRound(computerSelection, playerSelection){
  		}
  		else if(computerSelection == "scissors"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[1]}!`)
  			displayComputerChoice(computerSelection)
  			console.log('Computer wins the round!')
  			roundCounter++;
@@ -82,7 +87,8 @@ function playRound(computerSelection, playerSelection){
  		}
  		else if(computerSelection == "rock"){
  			console.clear();
- 			displayComputerChoice()
+ 			console.log(`You chose ${choicesArray[1]}!`)
+ 			displayComputerChoice(computerSelection)
  			console.log('You Win the Round!');
  			roundCounter++;
  			return(playerScore++);
@@ -92,6 +98,7 @@ function playRound(computerSelection, playerSelection){
  	else if(playerSelection.toLowerCase() == "scissors" || playerSelection.toLowerCase() == "s"){
  		if(computerSelection == "paper"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[3]}!`)
  			displayComputerChoice(computerSelection)
  			console.log('You Win the Round!')
  			roundCounter++;
@@ -99,6 +106,7 @@ function playRound(computerSelection, playerSelection){
  		}
  		else if(computerSelection == "rock"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[3]}!`)
  			displayComputerChoice(computerSelection)
  			console.log('Computer wins the round!')
  			roundCounter++;
@@ -106,6 +114,7 @@ function playRound(computerSelection, playerSelection){
  		}
  		else if(computerSelection == "scissors"){
  			console.clear();
+ 			console.log(`You chose ${choicesArray[3]}!`)
  			displayComputerChoice(computerSelection)
  			console.log('Tie!')
  			roundCounter++;
@@ -120,6 +129,7 @@ function playRound(computerSelection, playerSelection){
  };
 
  function game(){
+ 	console.clear()
  	console.log("\fHi! lets play Rock Paper Scissors!");
  	while(roundCounter < 5){
 	 	console.log(`Round: ${roundCounter + 1}`);
