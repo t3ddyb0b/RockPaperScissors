@@ -40,7 +40,7 @@ function displayComputerChoice(computerSelection){
  	console.log(`\fComputer chose ${computerSelection}!`)
  }
 function playRound(computerSelection, playerSelection){
-
+	
  	if(playerSelection.toLowerCase() == "rock" || playerSelection.toLowerCase() == "r"){
  		if(computerSelection == "paper"){
  			console.clear();
