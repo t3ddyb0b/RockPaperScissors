@@ -1,5 +1,3 @@
-let rl = require('readline');
-
 
 const choicesArray = ['Rock', 'Paper', 'Scissors']
 function randomizer(min, max){
